@@ -77,6 +77,6 @@ class SimilaryMatrix(object):
         return W * W_map 
 if __name__ == '__main__':
     img = cv2.imread('C:/Users/Admin/HienNguyen/VietBao/Normalized-Cut/ncut/test.jpg', cv2.IMREAD_COLOR)
-    cutter = SimilaryMatrix(img).W_maker
+    cutter = SimilaryMatrix(img).W_maker()
     print(cutter)
     
