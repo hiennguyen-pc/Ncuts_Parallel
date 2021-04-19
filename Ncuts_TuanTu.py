@@ -8,7 +8,7 @@ import cv2
 from time import *
 
 #Tạo ma trận tương đồng đối xứng W
-class Ncut(object):    
+class SimilaryMatrix(object):    
     def __init__(self, img):
         
         self.no_rows, self.no_cols, self.channel = img.shape
@@ -77,6 +77,6 @@ class Ncut(object):
         return W * W_map 
 if __name__ == '__main__':
     img = cv2.imread('C:/Users/Admin/HienNguyen/VietBao/Normalized-Cut/ncut/test.jpg', cv2.IMREAD_COLOR)
-    cutter = Ncut(img).W_maker
+    cutter = SimilaryMatrix(img).W_maker
     print(cutter)
     
