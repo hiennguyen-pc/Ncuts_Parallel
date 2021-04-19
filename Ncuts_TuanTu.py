@@ -22,7 +22,6 @@ class Ncut(object):
         self.sigma_X = 6
         # Dense W,D
         self.W = self.W_maker()
-        self.D = self.D_maker()
 
 
     def V_node_maker(self, img):
